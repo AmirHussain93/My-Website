@@ -319,7 +319,9 @@ section {
 }
 
 #header ul {
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 25%;
+    font-size: 12px;
 }
 
 #header li {
@@ -668,6 +670,7 @@ nav#nav-mobile a:hover {
 .social-icons {
     display: inline-block;
     list-style: none;
+    margin-left: 10px !important;
 }
 
 .social-icons a {
@@ -2078,7 +2081,7 @@ blockquote {
 
 /* =Media Queries for Nav
 ===============================*/
-@media all and (max-width: 1024px) {
+@media all and (max-width: 787px) {
     #nav-trigger {
         display: block;
     }
@@ -2452,11 +2455,6 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Banner Background and Text Colors */
 
-#banner {
-    background: url("assets/images/banner-images/banner-image-1.jpg") no-repeat center top;
-    background-size:cover;
-}
-
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Typography */
@@ -2490,6 +2488,10 @@ body {
 
 
 /* Banner Typography */
+#banner {
+    background: url("assets/images/banner-images/banner-image-1.jpg") no-repeat center top;
+    background-size:cover;
+}
 
 #banner h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
