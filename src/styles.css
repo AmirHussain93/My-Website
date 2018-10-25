@@ -320,7 +320,6 @@ section {
 
 #header ul {
     /* text-align: center; */
-    margin-left: 25%;
     font-size: 12px;
 }
 
@@ -670,7 +669,6 @@ nav#nav-mobile a:hover {
 .social-icons {
     display: inline-block;
     list-style: none;
-    margin-left: 10px !important;
 }
 
 .social-icons a {
