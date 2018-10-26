@@ -100,6 +100,9 @@ export const configuration = {
             {id:8, title:'The Eight Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-3.jpg'},
             {id:9, title:'The Ninth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-6.jpg'},
             {id:10, title:'The Tenth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-1.jpg'},
+            {id:11, title:'The eleventh Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-1.jpg'},
+            {id:12, title:'The twelth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-1.jpg'},
+            {id:12, title:'The thirtheenth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-1.jpg'}
         ]
     }
 

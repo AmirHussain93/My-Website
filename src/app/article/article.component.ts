@@ -8,6 +8,7 @@ import { ConfigService } from '../config.service';
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.css']
 })
+
 export class ArticleComponent implements OnInit {
 
   post = {};
@@ -16,13 +17,10 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit() {
     let id = +this.route.snapshot.paramMap.get('id');
-    console.log("id",id);
     this.post = this.getPost(id);
-    console.log("aaa",this.post)
   }
 
   getPost(id: number) {
-    console.log("llll")
     return this.config.getPostByID(id);
   }
 

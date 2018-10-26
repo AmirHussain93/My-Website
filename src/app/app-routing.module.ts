@@ -10,6 +10,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { HeaderComponent } from './header/header.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -20,8 +21,10 @@ const routes: Routes = [
   { path: 'Testimonials', component: TestimonialComponent },
   { path: 'Clients', component: ClientComponent },
   { path: 'Pricing', component: PricingComponent },
-  { path: 'Blog', component: BlogComponent},
-  { path: 'Article/:id', component: ArticleComponent}
+  { path: 'Blog', component: BlogComponent },
+  { path: 'Article/:id', component: ArticleComponent },
+  { path: '404', component: NotfoundComponent },
+  { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({

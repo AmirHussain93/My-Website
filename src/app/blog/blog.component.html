@@ -5,9 +5,13 @@
             <h3>{{blog.tagline}}</h3>
             <h2 class="section-title">{{blog.title}}</h2>
         </div>
-    <div *ngFor="let post of blog.posts" class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+    <div *ngFor="let post of pages" class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
       <app-post [post]="post"></app-post>  
     </div>
+    </div>
+    <div class="row clearfix">
+        <!-- when there is an event of setPage() from pagination component than call the event of blog component -->
+        <app-pagination [pager]="pager" (setPage)="setPage($event)"></app-pagination>
     </div>
   </section>
 <!--End of blog Tables-->
