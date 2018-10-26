@@ -84,7 +84,24 @@ export const configuration = {
         {target:'_blank', title:'Twitter', username:'jagmohan', icon:'twitter',websiteLink:'http://www.twitter.com'},
         {target:'_blank', title:'Instagram', username:'jagmohan', icon:'instagram', websiteLink:'http://www.instagram.com'},
         {target:'_blank', title:'behance', username:'jagmohan', icon:'behance', websiteLink:'http://www.behance.net'}
-    ]
+    ],
+
+    blog: {
+        tagline: 'MY BLOG',
+        title: 'MY THOUGHTS MY WORLD',
+        posts: [
+            {id:1, title:'The First Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-1.jpg'},
+            {id:2, title:'The Second Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-2.jpg'},
+            {id:3, title:'The Third Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-3.jpg'},
+            {id:4, title:'The Fourth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-5.jpg'},
+            {id:5, title:'The Fifth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-4.jpg'},
+            {id:6, title:'The Sixth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-1.jpg'},
+            {id:7, title:'The Seventh Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-2.jpg'},
+            {id:8, title:'The Eight Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-3.jpg'},
+            {id:9, title:'The Ninth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-6.jpg'},
+            {id:10, title:'The Tenth Article', author:'AD', publishDate:'2018-04-23T18:25:43.511Z', excert:'This is the summary of the article....', image:'gallery-image-1.jpg'},
+        ]
+    }
 
     
 
