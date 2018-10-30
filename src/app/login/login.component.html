@@ -1,0 +1,29 @@
+<section id="pricing" class="secondary-color text-center scrollto clearfix ">
+  <div class="row clearfix">
+    <div class="container">
+      <div class="center-form panel">
+        <div class="panel-body">
+        <h4 class="text-center"><i class="fa fa-sign-in mgr-5" aria-hidden="true"></i>Login</h4>
+        <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+          <div class="form-control">
+            <span class="fa fa-envelope form-control-icon"></span>
+            <input type="text" class="form-control input-lg" name="email" placeholder="Email" formControlName="email">
+          </div>
+
+          <div class="form-control">
+              <span class="fa fa-key form-control-icon"></span>
+              <input type="password" class="form-control input-lg" name="password" placeholder="Password" formControlName="password">
+             
+          </div>
+
+          <button type="submit" class="btn btn-block btn-success">Login</button>
+
+          <p class="text-center">
+            <small>Don't have an account yet? <a routerLink="/Signup">Sign Up</a></small>
+          </p>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>

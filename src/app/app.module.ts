@@ -20,6 +20,13 @@ import { ArticleComponent } from './article/article.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { PagerService } from './pager.service';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,11 +45,23 @@ import { PagerService } from './pager.service';
     PostComponent,
     ArticleComponent,
     NotfoundComponent,
-    PaginationComponent
+    PaginationComponent,
+    LoginComponent,
+    SignupComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+
+    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+    // and returns simulated server responses.
+    // Remove it when a real server is ready to receive requests.
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [ConfigService, PagerService],
   bootstrap: [AppComponent]

@@ -1,0 +1,34 @@
+<section id="pricing" class="secondary-color text-center scrollto clearfix ">
+  <div class="row clearfix">
+    <div class="container">
+      <div class="center-form panel">
+        <div class="panel-body">
+        <h4 class="text-center"><i class="fa fa-envelope-o mgr-5" aria-hidden="true"></i>Contact Us</h4>
+        <form [formGroup]="contactUsForm" (ngSubmit)="contactUs(contactUsForm.value)">
+          <div class="form-control">
+              <span class="fa fa-user form-control-icon mgt-15"></span>
+              <input type="text" class="form-control form-names input-lg" name="firstname" placeholder="First Name" formControlName="firstname">
+              <input type="text" class="form-control form-names input-lg" name="lastname" placeholder="Last Name" formControlName="lastname">
+          </div>
+          <div class="form-control">
+            <span class="fa fa-envelope form-control-icon"></span>
+            <input type="text" class="form-control input-lg" name="email" placeholder="Email" formControlName="email">
+          </div>
+
+          <div class="form-control">
+              <span class="fa fa-pencil form-control-icon"></span>
+              <textarea rows="10" cols="20" class="form-control input-lg" name="message" placeholder="Message" formControlName="message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-block btn-success">Send Message</button>
+
+          <p class="text-center">
+            <small>Continue Here<a routerLink="/Home"> Home</a></small>
+          </p>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
